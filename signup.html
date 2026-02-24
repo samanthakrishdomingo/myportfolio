@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wellness App - Sign Up</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: linear-gradient(135deg, #f5f0ff 0%, #fff0f5 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      overflow: hidden;
+      width: 100%;
+      max-width: 480px;
+      padding: 40px 32px;
+    }
+
+    .illustration {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .illustration img {
+      width: 180px;
+      height: auto;
+    }
+
+    h1 {
+      color: #e5739d;
+      font-size: 2.1rem;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #777;
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 1.05rem;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      color: #555;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    input {
+      width: 100%;
+      padding: 14px 16px 14px 48px;
+      border: 1.5px solid #e0e0e0;
+      border-radius: 12px;
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #f06292;
+      box-shadow: 0 0 0 3px rgba(240, 98, 146, 0.15);
+    }
+
+    .input-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+
+    .remember-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 20px 0 28px;
+      color: #555;
+    }
+
+    .btn-signup {
+      width: 100%;
+      padding: 16px;
+      background: #f06292;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .btn-signup:hover {
+      background: #ec407a;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(240, 98, 146, 0.3);
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 28px;
+      color: #666;
+    }
+
+    .login-link a {
+      color: #e5739d;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 32px;
+      color: #888;
+    }
+
+    .social-icons a {
+      font-size: 1.6rem;
+      color: inherit;
+      transition: color 0.2s;
+    }
+
+    .social-icons a:hover {
+      color: #e5739d;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 32px 20px;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="illustration">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+           alt="Meditating girl illustration">
+    </div>
+
+    <h1>Welcome!</h1>
+    <p class="subtitle">Sign up to continue</p>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <div class="input-wrapper">
+          <i class="fa-solid fa-user input-icon"></i>
+          <input type="text" id="name" placeholder="Type name" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <div class="input-wrapper">
+          <i class="fa-solid fa-envelope input-icon"></i>
+          <input type="email" id="email" placeholder="Type your e-mail" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="input-wrapper">
+          <i class="fa-solid fa-lock input-icon"></i>
+          <input type="password" id="password" placeholder="Create a password" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="repeat-password">Repeat Password</label>
+        <div class="input-wrapper">
+          <i class="fa-solid fa-lock input-icon"></i>
+          <input type="password" id="repeat-password" placeholder="Repeat your password" required>
+        </div>
+      </div>
+
+      <div class="remember-group">
+        <input type="checkbox" id="remember"> <label for="remember">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn-signup">SIGN UP</button>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a href="C:\Users\Linnaeus\Documents\DOMINGO_LINNAEUS\4th QUARTER\login.html">Login</a>
+    </div>
+
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+  </div>
+
+</body>
+</html>
